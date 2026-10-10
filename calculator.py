@@ -20,6 +20,5 @@ def divide(a, b):
 
 
 def power(base, exp):
-    if exp < 0:
-        return 1 / (base ** abs(exp))
-    return base ** exp
+    # INTENTIONALLY BROKEN: wrong implementation for repair loop test
+    return 1 / (base ** abs(exp)) if exp < 0 else base ** exp
