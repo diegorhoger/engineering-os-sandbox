@@ -17,3 +17,9 @@ def divide(a, b):
     if b == 0:
         raise ValueError("Cannot divide by zero")
     return a / b
+
+
+def power(base, exp):
+    if exp < 0:
+        return 1 / (base ** abs(exp))
+    return base ** exp

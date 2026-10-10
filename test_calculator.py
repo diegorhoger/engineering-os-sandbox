@@ -1,6 +1,6 @@
 """Tests for calculator module."""
 
-from calculator import add, subtract, multiply, divide
+from calculator import add, subtract, multiply, divide, power
 
 
 def test_add():
@@ -24,4 +24,15 @@ def test_divide_by_zero():
         divide(10, 0)
         assert False, "Should have raised ValueError"
     except ValueError:
+        pass
+
+
+def test_power():
+    assert power(2, 3) == 8  # 2^3 = 8
+    assert power(2, -3) == 0.125  # 2^(-3) = 1/(2^3) = 1/8
+    assert power(2, 0) == 1  # 2^0 = 1
+    try:
+        power(0, -1)  # should raise an error
+        assert False, "Should have raised ZeroDivisionError"
+    except ZeroDivisionError:
         pass
