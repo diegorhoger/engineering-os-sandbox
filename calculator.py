@@ -20,5 +20,5 @@ def divide(a, b):
 
 
 def power(base, exp):
-    # INTENTIONALLY BROKEN: wrong implementation for repair loop test
+    # Handles negative exponents: 1/(base^|exp|)
     return 1 / (base ** abs(exp)) if exp < 0 else base ** exp
