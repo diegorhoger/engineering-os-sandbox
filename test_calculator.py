@@ -1,6 +1,6 @@
 """Tests for calculator module."""
 
-from calculator import add, subtract, multiply, divide, negate, double
+from calculator import add, subtract, multiply, divide, negate, double, abs_diff
 
 
 def test_add():
@@ -33,3 +33,8 @@ def test_negate():
 
 def test_double():
     assert double(4) == 8
+
+
+def test_abs_diff():
+    assert abs_diff(3, 10) == 7
+    assert abs_diff(10, 3) == 7

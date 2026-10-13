@@ -25,3 +25,10 @@ def negate(x):
 
 def double(x):
     return add(x, x)
+
+
+def abs_diff(a, b):
+    diff = a - b
+    if diff < 0:
+        return negate(diff)
+    return diff
