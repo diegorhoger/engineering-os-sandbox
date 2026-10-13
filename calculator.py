@@ -21,3 +21,7 @@ def divide(a, b):
 
 def negate(x):
     return -x
+
+
+def double(x):
+    return add(x, x)
