@@ -1,6 +1,6 @@
 """Tests for calculator module."""
 
-from calculator import add, subtract, multiply, divide, square, cube
+from calculator import add, subtract, multiply, divide, square, cube, power
 
 
 def test_add():
@@ -33,3 +33,7 @@ def test_square():
 
 def test_cube():
     assert cube(3) == 27
+
+
+def test_power():
+    assert power(2, 5) == 32
