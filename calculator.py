@@ -25,3 +25,7 @@ def square(x):
 
 def cube(x):
     return square(x) * x
+
+
+def power(x, n):
+    return x ** n
