@@ -1,6 +1,6 @@
 """Tests for calculator module."""
 
-from calculator import add, subtract, multiply, divide
+from calculator import add, subtract, multiply, divide, triple
 
 
 def test_add():
@@ -25,3 +25,7 @@ def test_divide_by_zero():
         assert False, "Should have raised ValueError"
     except ValueError:
         pass
+
+
+def test_triple():
+    assert triple(4) == 12
