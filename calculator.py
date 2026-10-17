@@ -21,3 +21,7 @@ def divide(a, b):
 
 def triple(x):
     return x * 3
+
+
+def percent(part, total):
+    return (part / total) * 100
