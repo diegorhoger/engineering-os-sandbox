@@ -25,3 +25,7 @@ def triple(x):
 
 def percent(part, total):
     return (part / total) * 100
+
+
+def clamp(x, lo, hi):
+    return max(lo, min(x, hi))

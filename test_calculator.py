@@ -1,6 +1,6 @@
 """Tests for calculator module."""
 
-from calculator import add, subtract, multiply, divide, triple, percent
+from calculator import add, subtract, multiply, divide, triple, percent, clamp
 
 
 def test_add():
@@ -33,3 +33,9 @@ def test_triple():
 
 def test_percent():
     assert percent(50, 200) == 25.0
+
+
+def test_clamp():
+    assert clamp(5, 0, 10) == 5
+    assert clamp(-1, 0, 10) == 0
+    assert clamp(11, 0, 10) == 10
