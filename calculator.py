@@ -1,5 +1,4 @@
-"""Simple calculator module for end-to-end testing."""
-
+"""Simple calculator module for end-to-end testing.""" 
 
 def add(a, b):
     return a + b
@@ -21,3 +20,15 @@ def divide(a, b):
 
 def triple(x):
     return x * 3
+
+
+def percent(part, total):
+    return (part / total) * 100
+
+
+def clamp(x, lo, hi):
+    return max(lo, min(x, hi))
+
+
+def lerp(a, b, t):
+    return a + (b - a) * t
