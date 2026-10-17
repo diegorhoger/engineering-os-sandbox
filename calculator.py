@@ -1,5 +1,4 @@
-"""Simple calculator module for end-to-end testing."""
-
+"""Simple calculator module for end-to-end testing.""" 
 
 def add(a, b):
     return a + b
@@ -29,3 +28,7 @@ def percent(part, total):
 
 def clamp(x, lo, hi):
     return max(lo, min(x, hi))
+
+
+def lerp(a, b, t):
+    return a + (b - a) * t
